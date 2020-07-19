@@ -1,0 +1,10 @@
+# code
+# condition order of input left top corner then right bottom corner
+n = int(input())
+for i in range(n):
+    a, b, c, d = input()
+    e, f, g, h = input()
+    if a < e < c or b > f > d or e < a < g or f > b > h:
+        print("1")
+    else:
+        print("0")

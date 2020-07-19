@@ -1,0 +1,8 @@
+# code
+n = int(input())
+for i in range(n):
+    s = input()
+    items = s.split(".")
+    items.reverse()
+    result = ".".join(items)
+    print(result)

@@ -1,0 +1,15 @@
+# code
+import math
+
+n = int(input())
+o = ord('A')
+for i in range(n):
+    t = int(input())
+    result = ''
+    while t:
+        r = (t - 1) % 26
+        res = chr(o + r)
+        t = (t - 1) // 26
+        result = res + result
+    print(result)
+
